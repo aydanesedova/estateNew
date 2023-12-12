@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    min-height: 150px;
+    position: absolute;
+
+    .nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #AEAEAD;
+
+        .navbarContainer {
+            width: 75%;
+
+            .navbarUl {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+
+                li {
+                    a {
+                        color: white;
+                        font-size: 14px;
+                        font-family: "poppins", sans-serif;
+                        transition: 0.6s ease;
+
+                        &:hover {
+                            color: #fd784f;
+                        }
+                    }
+
+                }
+
+                form {
+                    display: flex;
+                    gap: 10px;
+
+                    input {
+                        width: 200px;
+                        height: 40px;
+                        border-radius: 10px;
+                        padding: 20px;
+                        border: none;
+                    }
+
+                    .btn {
+                        border: none;
+                        background-color: #1e2c4e;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        min-width: 20%;
+                        height: 40px;
+                        font-size: 16px;
+                        font-family: "Open Sans", sans-serif;
+                        color: white;
+
+                        &:hover {
+                            background-color: #040b1ddb;
+                        }
+                    }
+
+                    #product {
+                        width: 100%;
+                        height: 50px;
+                        background-color: red;
+
+                    }
+                }
+
+                #resultList {
+                    position: absolute;
+                    top: 100px;
+                    background-color: rgba(255, 255, 255, 0.923);
+                    list-style: none;
+                    width: 80%;
+                    left: 120px;
+                    min-height: 0px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    img {
+                        width: 20%;
+                        border-radius: 20px;
+                    }
+
+                    h2 {
+                        color: #1e2c4e;
+                        font-size: 24px;
+                        font-family: "Open Sans", sans-serif;
+                        line-height: 29px;
+                        font-weight: 700;
+                    }
+
+                }
+            }
+
+            .phone {
+                width: 55%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    min-height: 50px;
+                    width: 60%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    background-color: #fd784f;
+                    font-family: poppins;
+                }
+            }
+        }
+    }
+}
+
+#findHome {
+    width: 100%;
+    height: 651px;
+    background-image: url(/assets/images/home_slider_bcg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .findHomeTxt {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 92px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 110px;
+            font-weight: 700;
+            color: white;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:991px) {
+    #findHome {
+        .findHomeTxt {
+            h1 {
+                font-size: 70px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #findHome {
+        .findHomeTxt {
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:462px) {
+    #findHome {
+        .findHomeTxt {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+#featuredProperies {
+    width: 100%;
+    min-height: 806px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .featuredProperiesTxt {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4px;
+
+        .line {
+            height: 18px;
+            width: 2px;
+            background-color: #fd784f;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 29px;
+            font-weight: 700;
+            color: #1e2c4e;
+        }
+
+        p {
+            color: #b0b1b3;
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 24px;
+            font-weight: 600;
+        }
+
+    }
+
+    #products {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+
+        .myDiv {
+            width: 32%;
+
+            img {
+                width: 100%;
+            }
+
+            h2 {
+                color: #1e2c4e;
+                font-size: 24px;
+                font-family: "Open Sans", sans-serif;
+                line-height: 29px;
+                font-weight: 700;
+            }
+
+            button {
+                border: none;
+                background-color: #040B1D;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 40%;
+                height: 30px;
+
+                &:hover {
+                    background-color: #040b1ddb;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    #featuredProperies {
+        #products {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #featuredProperies {
+        #products {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width:456px) {
+    #featuredProperies {
+        #products {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+#clientstestionials {
+    width: 100%;
+    min-height: 755px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    background-image: url(/assets/images/testimonials_background.jpg);
+
+    .clientstestionialsTxt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 600px;
+
+        .clientstestionialsLine {
+            width: 3px;
+            height: 25px;
+            background-color: #FD784F;
+        }
+
+        h3 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 700;
+            height: 40px;
+            display: flex;
+            align-items: end;
+            color: white;
+        }
+
+        span {
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #b0b1b3;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
+            line-height: 36px;
+            font-weight: 300;
+            color: white;
+            width: 73%;
+            height: 230px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .natalieSmith {
+            width: 100%;
+            height: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                border-radius: 50%;
+            }
+
+            span {
+                color: #fd784f;
+                font-family: "Open Sans", sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            .client {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Open Sans", sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                color: white;
+
+
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:534px) {
+    #clientstestionials {
+        .clientstestionialsTxt {
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media screen and (max-width:449px) {
+        #clientstestionials {
+            .clientstestionialsTxt {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:364px) {
+    #clientstestionials {
+        .clientstestionialsTxt {
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+#citiesClients {
+    width: 100%;
+    min-height: 717px;
+    background-image: url(/assets/images/world.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .citiesClientsTxt {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .clientstestionialsLine {
+            height: 23px;
+            width: 2px;
+            background-color: #fd784f;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 29px;
+            font-weight: 700;
+            color: #1e2c4e;
+        }
+
+        p {
+            color: #b0b1b3;
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 24px;
+            font-weight: 600;
+        }
+
+    }
+
+    .citiesClientsImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .citiesClientsFive {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            img {
+                width: 90%;
+            }
+
+            p {
+                background-color: #FD784F;
+                min-width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                font-size: 14px;
+                font-family: "Open Sans", sans-serif;
+                line-height: 34px;
+                font-weight: 600;
+                bottom: 0;
+                position: absolute;
+
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:991px) {
+    #citiesClients {
+        .citiesClientsImg {
+            flex-wrap: wrap;
+
+            .citiesClientsFive {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    #citiesClients {
+        .citiesClientsImg {
+            flex-wrap: wrap;
+
+            .citiesClientsFive {
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+#copyright {
+    width: 100%;
+    min-height: 40px;
+    background-color: #040B1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .copyrightTxt {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 30px;
+        margin-top: 10px;
+
+        p {
+            color: #485165;
+            font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 49px;
+            font-weight: 400;
+
+            span {
+                cursor: pointer;
+                transition: 0.6 ease;
+                color: #0056b3;
+                font-size: 14px;
+                font-family: "Open Sans", sans-serif;
+                line-height: 49px;
+                font-weight: 400;
+
+                &:hover {
+                    color: #0057b380;
+                }
+            }
+        }
+    }
+}

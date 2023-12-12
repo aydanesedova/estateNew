@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aydan</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/home.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg nav">
+            <div class="container-fluid navbarContainer">
+                <a class="navbar-brand" style="display: flex; flex-direction: column; align-items: center"
+                    href="/index.html"><img src="assets/images/logo (1).png" alt="" />
+                    <p style="
+                  color: white;
+                  font-size: 25px;
+                  font-family: 'Montserrat', sans-serif;
+                ">
+                        THE ESTATE
+                    </p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbarUl">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">LISTINGS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/cart.html"><i
+                                    class="fa-regular fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/form.html"><i
+                                    class="fa-regular fa-user"></i></a>
+                        </li>
+                        <form onsubmit="searchByName(); return false;">
+                            <label for="searchInput"></label>
+                            <input type="text" id="searchInput" placeholder="Search">
+                            <button class="btn" type="submit">Search</button>
+                        </form>
+                        <ul id="resultList"></ul>
+                    </ul>
+                    <div class="phone">
+                        <p>+0080 234 567 84441</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="findHome">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="findHomeTxt">
+                            <h1>FIND YOUR HOME</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="featuredProperies">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="featuredProperiesTxt">
+                            <div class="line"></div>
+                            <h3>FEATURED PROPERTIES</h3>
+                            <p>See our best offers</p>
+                        </div>
+                    </div>
+                    <div id="products">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clientstestionials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="clientstestionialsTxt">
+                            <div class="clientstestionialsLine"></div>
+                            <h3>CLIENTS TESTIMONIALS</h3>
+                            <span>See our best offers</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae neque libero. Vivamus
+                                vel interdum massa. Mauris ut felis vel diam pretium eleifend vel eu neque. Mauris a
+                                condimentum tortor. Cras nec molestie est. Nulla vel facilisis metus. Quisque tempus
+                                fermentum enim, in feugiat sem laoreet</p>
+                            <div class="natalieSmith">
+                                <img src="/assets/images/person.jpg" alt="">
+                                <span> NATALIE SMITH</span>
+                                <span class="client">Client in California</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="citiesClients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="citiesClientsTxt">
+                            <div class="clientstestionialsLine"></div>
+                            <h3>CITIES CLIENTS PREFER</h3>
+                            <p>What you need to do
+                            </p>
+                        </div>
+                    </div>
+                    <div class="citiesClientsImg">
+                        <div class="citiesClientsFive">
+                            <img src="./assets/images/city_6.jpg" alt="">
+                            <p>DUBLIN</p>
+                        </div>
+                        <div class="citiesClientsFive">
+                            <img src="./assets/images/city_6.jpg" alt="">
+                            <p>VIVIENNA</p>
+                        </div>
+                        <div class="citiesClientsFive">
+                            <img src="./assets/images/city_6.jpg" alt="">
+                            <p>MARBELLA</p>
+                        </div>
+                        <div class="citiesClientsFive">
+                            <img src="./assets/images/city_6.jpg" alt="">
+                            <p>NEW YORK</p>
+                        </div>
+                        <div class="citiesClientsFive">
+                            <img src="./assets/images/city_6.jpg" alt="">
+                            <p>GENEVA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyrightTxt">
+                            <p>Copyright ©2023 All rights reserved | This template is made with <i
+                                    class="fa-solid fa-heart"></i> by <span>Colorlib</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/assets/js/home.js"></script>
+</body>
+
+</html>

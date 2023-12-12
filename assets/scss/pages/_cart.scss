@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    min-height: 150px;
+    position: fixed;
+
+    .nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1E2C4E;
+
+        .navbarContainer {
+            width: 75%;
+
+            .navbarUl {
+                width: 80%;
+                display: flex;
+                justify-content: end;
+                gap: 15px;
+
+                li {
+                    a {
+                        color: white;
+                        font-size: 14px;
+                        font-family: "poppins", sans-serif;
+                        transition: 0.6s ease;
+
+                        &:hover {
+                            color: #fd784f;
+                        }
+                    }
+                }
+            }
+
+            .phone {
+                width: 48%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    min-height: 50px;
+                    width: 60%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    background-color: #fd784f;
+                    font-family: poppins;
+                }
+            }
+        }
+    }
+}
+
+#mainSec {
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #cartAll {
+        width: 90%;
+        height: 600px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        gap: 10px;
+
+        .box {
+            border: 1px solid #fd784f;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+            h2{
+                color: #1e2c4e;
+                font-size: 24px;
+                font-family: "Open Sans", sans-serif;
+                line-height: 29px;
+                font-weight: 700;
+            }
+            button{
+                border: none;
+                background-color: #040B1D;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                height: 30px;
+                margin-bottom: 20px;
+                &:hover{
+                    background-color: #040b1ddb;
+                }
+            }
+        }
+
+    }
+}
